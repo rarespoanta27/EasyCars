@@ -52,7 +52,7 @@ EasyCars is a comprehensive car rental application designed to provide users wit
 
 1. **Clone the Repository:** Clone the project repository from GitHub.
    ```sh
-   git clone https://github.com/yourusername/easycars.git
+   git clone https://github.com/rarespoanta27/EasyCars
 
 2. **Navigate to the project directory:**
    ```bash
