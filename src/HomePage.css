@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.sidebar {
+    background: #9b59b6;
+    color: white;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+.sidebar-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.signout-button {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.signout-button:hover {
+    background-color: #8e44ad;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar-nav ul li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+.sidebar-nav ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 220px;
+    flex: 1;
+    padding: 20px;
+    overflow: visible;
+    position: relative;
+    margin-top: 700px;
+    min-height: 100vh;
+    z-index: 40;
+    padding-top: 1000px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 200px); 
+    padding: 10px ; 
+    position: fixed;
+    top: 0;
+    left: 200px;
+    background: #f6f5f7;
+    z-index: 40;
+    padding-right: 20px; 
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.overview-card {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overview-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+}
+
+.overview-card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.details-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+
+.add-to-cart-button {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #8e44ad;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
+.language-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.language-button.active {
+    font-weight: bold;
+}
+
+.language-button:last-child {
+    margin-right: 0;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 100;
+    transition: opacity 0.3s ease;
+}

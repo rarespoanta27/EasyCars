@@ -1,0 +1,77 @@
+.cart-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.cart-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-container li {
+  margin-bottom: 10px;
+}
+
+.cart-container li h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.cart-container li p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.cart-container .date-picker {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cart-container .date-picker label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.cart-container .date-picker input {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cart-container button {
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.cart-container button:hover {
+  background-color: #8e44ad;
+}
+
+.cart-container button:focus {
+  outline: none;
+}
+
+.checkout-button {
+  margin-top: 20px;
+}
